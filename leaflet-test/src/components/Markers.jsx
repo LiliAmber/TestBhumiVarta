@@ -6,7 +6,7 @@ export default function Markers(props) {
       {props.hospitals.map((item) => {
         return (
           <Marker key={item.id} position={item.coordinates}>
-            <Popup>You clicked marker: {item.name}</Popup>
+            <Popup>You clicked marker: {item.id}</Popup>
           </Marker>
         );
       })}
